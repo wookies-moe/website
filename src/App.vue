@@ -110,7 +110,7 @@ async function writeClipboard(value: string): Promise<boolean> {
 
         <div class="hero__body">
           <h1 class="title">
-            <span class="title__name">Wookies</span><span class="title__tld">.moe</span>
+            <span class="title__name">Wookies</span>
           </h1>
           <p class="tagline">
             <span class="comment">//</span> Minecraft Server \ Sandbox Practice
@@ -291,13 +291,8 @@ async function writeClipboard(value: string): Promise<boolean> {
   font-weight: 600;
   letter-spacing: -0.01em;
   line-height: 1.1;
-  color: var(--text);
-}
-
-.title__tld {
   color: var(--accent);
 }
-
 .tagline {
   font-family: var(--font-mono);
   font-size: 0.95rem;

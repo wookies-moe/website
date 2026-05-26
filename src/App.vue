@@ -414,12 +414,8 @@ async function writeClipboard(value: string): Promise<boolean> {
   }
 
   .meta {
-    column-gap: 0.85rem;
+    column-gap: 0.5rem;
     row-gap: 0.3rem;
-  }
-
-  .meta__dot {
-    display: none;
   }
 }
 </style>

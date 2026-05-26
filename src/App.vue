@@ -174,7 +174,7 @@ async function writeClipboard(value: string): Promise<boolean> {
             class="footer__line"
             :class="copyFlash.ok ? 'footer__copy' : 'footer__copy--err'"
           >
-            <span class="footer__arrow">//</span>
+            <span class="comment footer__arrow">//</span>
             <span>{{ copyFlash.text }}</span>
           </span>
         </Transition>

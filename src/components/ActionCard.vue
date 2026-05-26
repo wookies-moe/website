@@ -88,7 +88,7 @@ const segments = computed(() => props.text.split(/(?<=\/)/))
   padding: 1.1rem 1.25rem;
   background: var(--bg-elevated);
   border: 1px solid var(--border);
-  border-radius: 10px;
+  border-radius: 2px;
   color: var(--text);
   font-family: inherit;
   text-align: left;

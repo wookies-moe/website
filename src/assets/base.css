@@ -1,0 +1,112 @@
+/*
+ * Catppuccin Macchiato — derived from ru.kirushkinx.wookies.utils.Palette
+ * single source of truth: keep these in sync with the plugin enum.
+ */
+:root {
+  --ctp-black: #363a4f;
+  --ctp-dark-blue: #1e2030;
+  --ctp-dark-green: #6db87a;
+  --ctp-dark-aqua: #8bd5ca;
+  --ctp-dark-red: #c0536a;
+  --ctp-purple: #ae8fd6;
+  --ctp-gold: #f5a97f;
+  --ctp-gray: #a5adcb;
+  --ctp-dark-gray: #6e738d;
+  --ctp-blue: #5b7ec7;
+  --ctp-green: #a6da95;
+  --ctp-aqua: #8aadf4;
+  --ctp-red: #f0737a;
+  --ctp-pink: #f0a8d0;
+  --ctp-yellow: #eed49f;
+  --ctp-white: #cad3f5;
+
+  /* darkened (shadow) tones from the plugin */
+  --ctp-dark-blue-shadow: #0d0e15;
+  --ctp-black-shadow: #181a23;
+  --ctp-aqua-shadow: #3e4d6d;
+
+  /* semantic */
+  --bg: var(--ctp-dark-blue);
+  --bg-elevated: var(--ctp-black);
+  --bg-deep: var(--ctp-dark-blue-shadow);
+  --border: rgba(202, 211, 245, 0.08);
+  --border-strong: rgba(202, 211, 245, 0.16);
+  --text: var(--ctp-white);
+  --text-muted: var(--ctp-gray);
+  --text-faint: var(--ctp-dark-gray);
+  --accent: var(--ctp-aqua);
+  --accent-muted: var(--ctp-aqua-shadow);
+  --string: var(--ctp-green);
+  --comment: var(--ctp-dark-gray);
+  --keyword: var(--ctp-purple);
+  --warn: var(--ctp-yellow);
+  --danger: var(--ctp-red);
+
+  /* fonts */
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.6;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background:
+    radial-gradient(
+      ellipse at top,
+      rgba(138, 173, 244, 0.06) 0%,
+      transparent 50%
+    ),
+    linear-gradient(rgba(202, 211, 245, 0.022) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(202, 211, 245, 0.022) 1px, transparent 1px),
+    var(--bg);
+  background-size: 100% 100%, 36px 36px, 36px 36px;
+  background-position: 0 0, 0 0, 0 0;
+  background-attachment: fixed;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+a:hover {
+  color: var(--ctp-white);
+}
+
+button {
+  font: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  color: inherit;
+  text-align: inherit;
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+::selection {
+  background: var(--accent-muted);
+  color: var(--ctp-white);
+}

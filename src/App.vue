@@ -85,9 +85,15 @@ async function writeClipboard(value: string): Promise<boolean> {
 <template>
   <div class="page">
     <header class="page__header">
-      <span class="pkg">
-        package moe.wookies;
-      </span>
+      <span class="pkg">package moe.wookies;</span>
+      <a
+        class="source-link"
+        href="https://github.com/wookies-moe/website"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <span class="comment">//</span> source
+      </a>
     </header>
 
     <main class="content">
@@ -215,6 +221,10 @@ async function writeClipboard(value: string): Promise<boolean> {
 }
 
 .page__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
   font-family: var(--font-mono);
   font-size: 0.82rem;
   color: var(--comment);
@@ -223,6 +233,16 @@ async function writeClipboard(value: string): Promise<boolean> {
 .pkg::before {
   content: '> ';
   color: var(--text-faint);
+}
+
+.source-link {
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.source-link:hover {
+  color: var(--accent);
 }
 
 .meta__offline {

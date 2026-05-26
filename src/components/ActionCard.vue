@@ -128,28 +128,28 @@ const segments = computed(() => props.text.split(/(?<=\/)/))
 
 .card--success,
 .card--success:hover {
-  border-color: var(--ctp-green);
-  background: color-mix(in srgb, var(--bg-elevated) 88%, var(--ctp-green) 12%);
-  box-shadow: 0 4px 0 color-mix(in srgb, var(--ctp-green) 35%, rgba(0, 0, 0, 0.25));
+  border-color: var(--success);
+  background: color-mix(in srgb, var(--bg-elevated) 88%, var(--success) 12%);
+  box-shadow: 0 4px 0 color-mix(in srgb, var(--success) 35%, rgba(0, 0, 0, 0.25));
   transform: translateY(-1px);
 }
 
 .card--success .card__icon,
 .card--success:hover .card__icon {
-  color: var(--ctp-green);
+  color: var(--success);
 }
 
 .card--error,
 .card--error:hover {
-  border-color: var(--ctp-red);
-  background: color-mix(in srgb, var(--bg-elevated) 88%, var(--ctp-red) 12%);
-  box-shadow: 0 4px 0 color-mix(in srgb, var(--ctp-red) 35%, rgba(0, 0, 0, 0.25));
+  border-color: var(--danger);
+  background: color-mix(in srgb, var(--bg-elevated) 88%, var(--danger) 12%);
+  box-shadow: 0 4px 0 color-mix(in srgb, var(--danger) 35%, rgba(0, 0, 0, 0.25));
   transform: translateY(-1px);
 }
 
 .card--error .card__icon,
 .card--error:hover .card__icon {
-  color: var(--ctp-red);
+  color: var(--danger);
 }
 
 .card__label {

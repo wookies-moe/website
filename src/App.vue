@@ -226,7 +226,7 @@ async function writeClipboard(value: string): Promise<boolean> {
 }
 
 .meta__offline {
-  color: var(--ctp-red);
+  color: var(--danger);
 }
 
 .content {
@@ -366,11 +366,11 @@ async function writeClipboard(value: string): Promise<boolean> {
 }
 
 .footer__copy {
-  color: var(--string);
+  color: var(--success);
 }
 
 .footer__copy--err {
-  color: var(--ctp-red);
+  color: var(--danger);
 }
 
 .footer-swap-enter-active,

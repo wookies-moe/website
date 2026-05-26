@@ -1,7 +1,4 @@
-/*
- * Catppuccin Macchiato — derived from ru.kirushkinx.wookies.utils.Palette
- * single source of truth: keep these in sync with the plugin enum.
- */
+/* Catppuccin Macchiato */
 :root {
   --ctp-black: #363a4f;
   --ctp-dark-blue: #1e2030;
@@ -30,7 +27,6 @@
   --bg-elevated: var(--ctp-black);
   --bg-deep: var(--ctp-dark-blue-shadow);
   --border: rgba(202, 211, 245, 0.08);
-  --border-strong: rgba(202, 211, 245, 0.16);
   --text: var(--ctp-white);
   --text-muted: var(--ctp-gray);
   --text-faint: var(--ctp-dark-gray);
@@ -39,7 +35,7 @@
   --string: var(--ctp-green);
   --comment: var(--ctp-dark-gray);
   --keyword: var(--ctp-purple);
-  --warn: var(--ctp-yellow);
+  --success: var(--ctp-green);
   --danger: var(--ctp-red);
 
   /* fonts */
